@@ -17,11 +17,11 @@ npm install redux
 ## Three principles
 
 * **Single source of truth**
-The state of your whole application is stored in an object tree within a single store.
+*The state of your whole application is stored in an object tree within a single store.*
 * **State is read-only**
-The only way to change the state is to emit an action, an object describing what happened.
+*The only way to change the state is to emit an action, an object describing what happened.*
 * **Changes are made with pure functions**
-To specify how the state tree is transformed by actions, you write pure reducers.
+*To specify how the state tree is transformed by actions, you write pure reducers.*
 
 ## Basics
 
@@ -74,7 +74,7 @@ boundCompleteTodo(index)
 
 * Reducers are "pure functions". They should not have any side-effects nor mutate the state – they must return a modified copy.
 
-'''(Note: A pure function doesn't depend on and doesn't modify the states of variables out of its scope. Concretely, that means a pure function always returns the same result given same parameters. Its execution doesn't depend on the state of the system. Pure functions are a pillar of functional programming)'''
+*(Note: A pure function doesn't depend on and doesn't modify the states of variables out of its scope. Concretely, that means a pure function always returns the same result given same parameters. Its execution doesn't depend on the state of the system. Pure functions are a pillar of functional programming)*
 
 #### Designing the State Shape
 
@@ -131,8 +131,8 @@ function todoAppReducer(state = initialState, action) {
 
 #### Should NEVER DO
 Things you should never do inside a reducer:
-* Mutate its arguments;
-* Perform side effects like API calls and routing transitions;
+* Mutate its arguments.
+* Perform side effects like API calls and routing transitions.
 * Call non-pure functions, e.g. Date.now() or Math.random().
 
 #### Splitting Reducers
@@ -227,7 +227,7 @@ store.dispatch(addTodo('Learn about store'))
 
 ### DATA FLOW
 
-1. call `store.dispatch()``
+1. call `store.dispatch()`
 2. The Redux Store calls the reducer functions you gave it
 ```
 (previousState, action) => newState
