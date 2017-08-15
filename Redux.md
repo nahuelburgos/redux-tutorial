@@ -24,6 +24,10 @@ npm install redux
 *To specify how the state tree is transformed by actions, you write pure reducers.*
 
 ## Basics
+* [Actions](#actions)
+* [Reducers](#reducers)
+* [Store](#store)
+* [Data Flow](#data-flow)
 
 ### ACTIONS
 
