@@ -11,16 +11,16 @@ npm install redux
 
 * Our code must manage more state than ever before
 * When a system is opaque and non-deterministic, it's hard to reproduce bugs or add new features.
-* We're mixing two concepts that are very hard for the human mind to reason about:mutation and asynchronicity
+* We're mixing two concepts that are very hard for the human mind to reason about mutation and asynchronicity
 * Redux attempts to make state mutations predictable
 
 ## Three principles
 
-* Single source of truth
+* **Single source of truth**
 The state of your whole application is stored in an object tree within a single store.
-* State is read-only
+* **State is read-only**
 The only way to change the state is to emit an action, an object describing what happened.
-* Changes are made with pure functions
+* **Changes are made with pure functions**
 To specify how the state tree is transformed by actions, you write pure reducers.
 
 ## Basics
