@@ -4,3 +4,5 @@
 * [Redux with React](./Redux-React.md)
 * [Async Actions](./Thunk.md)
 * [Middlewares](./Middlewares.md)
+
+Reference: [Official Redux Doc](http://redux.js.org/)
